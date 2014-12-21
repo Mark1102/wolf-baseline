@@ -23,7 +23,7 @@ Also note:
 ### Installing
 
 1. In your Wolf admin, go to `Files > themes` and upload the `/baseline` folder (or use FTP to upload the `/baseline` folder to your Wolf installation's `/public/themes` directory).
-1. Go the `Snippets` tab, and create new snippet called `baselineExtraNav` (observe the amelCase). Copy/paste the contents of the `baselineExtraNav.php` file into the body of this snippet; make sure filter is set to `--none--`. Save.
+1. Go the `Snippets` tab, and create new snippet called `baselineExtraNav` (observe the camelCase). Copy/paste the contents of the `baselineExtraNav.php` file into the body of this snippet; make sure filter is set to `--none--`. Save.
 1. Go to the `Layouts` tab, and create a new layout called `Baseline`, with the Content-Type of `text/html`. Copy/paste the contents of the `baseline-layout.html` file into the body of this layout. Save.
 1. **Optionally,** open go to the `Pages` tab, and open the `Articles` for editing. Replace the `sidebar` code with the contents of the `Articles-sidebar.php` file. (This new code prevents the archive listing from appearing twice on this page in a default Wolf installation.)
 1. Go to the `Pages` tab, and open the `Home Page` for editing. Under the `Settings` tab, choose `Baseline` from the Layout drop-down. Save.
