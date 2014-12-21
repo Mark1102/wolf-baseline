@@ -5,6 +5,7 @@
 ### What is it?
 
 This is a 'theme' (or Layout) for [Wolf CMS][wcms]. It is designed to be a fairly simple drop-in **responsive** theme.
+
 ![Baseline Thumbnail][thu]
 
 **Features**
@@ -21,7 +22,7 @@ Also note:
 
 ### Installing
 
-1. In your Wolf admin, go to `Files > themes` and upload the `baseline` folder.
+1. In your Wolf admin, go to `Files > themes` and upload the `/baseline` folder (or use FTP to upload the `/baseline` folder to your Wolf installation's `/public/themes` directory).
 1. Go the `Snippets` tab, and create new snippet called `baselineExtraNav` (observe the amelCase). Copy/paste the contents of the `baselineExtraNav.php` file into the body of this snippet; make sure filter is set to `--none--`. Save.
 1. Go to the `Layouts` tab, and create a new layout called `Baseline`, with the Content-Type of `text/html`. Copy/paste the contents of the `baseline-layout.html` file into the body of this layout. Save.
 1. **Optionally,** open go to the `Pages` tab, and open the `Articles` for editing. Replace the `sidebar` code with the contents of the `Articles-sidebar.php` file. (This new code prevents the archive listing from appearing twice on this page in a default Wolf installation.)
@@ -62,3 +63,4 @@ Please use the [Github repo's issue tracker][grit] to log any bugs or enhancemen
 [ske]: http://getskel.com/
 [doc]: http://getskel.com/docs
 [flx]: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+[grit]: https://github.com/dajare/wolf-baseline/issues
