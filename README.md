@@ -14,7 +14,7 @@ A minimally tweaked version of [Baseline][bas], a simple boilerplate for the [Sk
 
 Also note:
 
-- main navigation in the header;
+- main menu in the header;
 - 'perpetual' ('rolling') navigation in sidebar/footer: always points up to parent page (if there is one), and down to any child pages (if there are any) from the current page;
 - images resize with screen size;
 - uses the [Flexbox sticky-footer][flx] system (progressive enhancment).
