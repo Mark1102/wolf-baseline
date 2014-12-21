@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!-- BASED ON skel-baseline v2.0.1 | (c) n33 | getskel.com | MIT licensed -->
+<html>
+	<head>
+		<title><?php echo $this->title(); ?> : My Site</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="<?php echo ($this->description() != '') ? $this->description() : 'Default description goes here'; ?>" />
+		<meta name="keywords" content="<?php echo ($this->keywords() != '') ? $this->keywords() : 'default, keywords, here'; ?>" />
+		<!--[if lte IE 8]><script src="public/themes/baseline/js/html5shiv.js"></script><![endif]-->
+		<script src="<?php echo THEMES_URI; ?>baseline/js/jquery.min.js"></script>
+		<script src="<?php echo THEMES_URI; ?>baseline/js/skel.min.js"></script>
+		<script src="<?php echo THEMES_URI; ?>baseline/js/skel-layers.min.js"></script>
+		<script src="<?php echo THEMES_URI; ?>baseline/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="<?php echo THEMES_URI; ?>baseline/css/skel.css" />
+			<link rel="stylesheet" href="<?php echo THEMES_URI; ?>baseline/css/style.css" />
+			<link rel="stylesheet" href="<?php echo THEMES_URI; ?>baseline/css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+<div id="site">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="<?php echo URL_PUBLIC; ?>">My Site</a></h1>
+				<nav id="nav">
+					<ul>
+<li<?php echo url_match('/') ? ' class="current"': ''; ?>><a href="<?php echo URL_PUBLIC; ?>">Home</a></li>
+     <?php foreach($this->find('/')->children() as $menu): ?>
+<li <?php echo in_array($menu->slug(), explode('/', CURRENT_URI)) ? ' class="current"': null; ?>><?php echo $menu->link($menu->title); ?></li>
+      <?php endforeach; ?>
+					</ul>
+				</nav>
+			</header>
+
+<?php if(url_match('/')): ?>
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Baseline <em>for</em> Wolf</h2>
+				<!-- p>A simple starting point for projects based on Skel.</p -->
+			</section>
+
+<?php endif; ?>
+		<!-- Main -->
+			<main class="site-content">
+			<div id="main" class="container">
+
+				<!-- Intro -->
+					<div class="row">
+						<section class="8u 6u(2) 12u$(3)">
+							<h2><?php echo $this->title(); ?></h2>
+
+<?php echo $this->content(); ?>
+
+              </section>
+						<section class="4u 6u(2) 12u$(3)">
+
+<?php echo $this->content('sidebar', true); ?>
+<?php if ($this->level() > 0) { $this->includeSnippet('baselineExtraNav'); } ?>
+
+						</section>
+					</div>
+			</div>
+			</main>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<div class="-5u 2u$ 12u$(2)">
+<ul class="icons">
+<li><a href="http://www.twitter.com/wolfcms" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+<li><a href="https://github.com/wolfcms/wolfcms" class="icon fa-github"><span class="label">Github</span></a></li>
+<li><a href="https://docs.wolfcms.org/" class="icon fa-file-text"><span class="label">Docs</span></a></li>
+</ul>
+						</div>
+						<!-- Break -->
+						<div class="3u 6u(2) 12u$(3)">
+<div class="copyright">&copy; Untitled. All rights reserved.</div>
+						</div>
+						<div class="-6u 3u$ 6u$(2) 12u$(3)">
+<div class="copyright"><a href="http://www.wolfcms.org/">Wolf CMS</a> Inside | Built on <a href="http://getskel.com/downloads/skel-baseline/">Baseline</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+</div><?php // end #site ?>
+	</body>
+</html>
