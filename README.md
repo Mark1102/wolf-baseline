@@ -6,7 +6,7 @@
 
 This is a 'theme' (or Layout) for [Wolf CMS][wcms]. It is designed to be a fairly simple drop-in **responsive** theme.
 
-![Baseline Thumbnail][thu]
+[![Baseline Thumbnail][thu]][png]
 
 **Features**
 
@@ -59,6 +59,7 @@ Please use the [Github repo's issue tracker][grit] to log any bugs or enhancemen
 
 [wcms]: http://www.wolfcms.org/
 [thu]: http://i.imgur.com/XMtmT2Z.png "Baseline for Wolf CMS"
+[png]: http://i.imgur.com/BYpq01c.png
 [bas]: http://getskel.com/downloads/skel-baseline/
 [ske]: http://getskel.com/
 [doc]: http://getskel.com/docs
