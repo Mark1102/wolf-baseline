@@ -17,16 +17,16 @@ Also note:
 - main menu in the header;
 - 'perpetual' ('rolling') navigation in sidebar/footer: always points up to parent page (if there is one), and down to any child pages (if there are any) from the current page;
 - images resize with screen size;
-- uses the [Flexbox sticky-footer][flx] system (progressive enhancment).
+- uses the [Flexbox sticky-footer][flx] system (progressive enhancement).
 
 
 ### Installing
 
 1. In your Wolf admin, go to `Files > themes` and upload the `/baseline` folder (or use FTP to upload the `/baseline` folder to your Wolf installation's `/public/themes` directory).
-1. Go the `Snippets` tab, and create new snippet called `baselineExtraNav` (observe the camelCase). Copy/paste the contents of the `baselineExtraNav.php` file into the body of this snippet; make sure filter is set to `--none--`. Save.
-1. Go to the `Layouts` tab, and create a new layout called `Baseline`, with the Content-Type of `text/html`. Copy/paste the contents of the `baseline-layout.html` file into the body of this layout. Save.
-1. **Optionally,** open go to the `Pages` tab, and open the `Articles` for editing. Replace the `sidebar` code with the contents of the `Articles-sidebar.php` file. (This new code prevents the archive listing from appearing twice on this page in a default Wolf installation.)
-1. Go to the `Pages` tab, and open the `Home Page` for editing. Under the `Settings` tab, choose `Baseline` from the Layout drop-down. Save.
+2. Go the `Snippets` tab, and create new snippet called `baselineExtraNav` (observe the camelCase). Copy/paste the contents of the `baselineExtraNav.php` file into the body of this snippet; make sure filter is set to `--none--`. Save.
+3. Go to the `Layouts` tab, and create a new layout called `Baseline`, with the Content-Type of `text/html`. Copy/paste the contents of the `baseline-layout.html` file into the body of this layout. Save.
+4. **Optionally,** open go to the `Pages` tab, and open the `Articles` for editing. Replace the `sidebar` code with the contents of the `Articles-sidebar.php` file. (This new code prevents the archive listing from appearing twice on this page in a default Wolf installation.)
+5. Go to the `Pages` tab, and open the `Home Page` for editing. Under the `Settings` tab, choose `Baseline` from the Layout drop-down. Save.
 
 **Your site is now using the Baseline Layout!**
 
